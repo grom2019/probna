@@ -1,0 +1,7 @@
+FROM mysql:8.0
+ENV MYSQL_ROOT_PASSWORD=new_password
+ENV MYSQL_DATABASE=mydatabase
+ENV MYSQL_USER=root
+ENV MYSQL_PASSWORD=new_password
+EXPOSE 3306
+CMD ["mysqld"]
